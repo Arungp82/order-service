@@ -1,6 +1,6 @@
-#server:
-#  port: 9094
-#
+server:
+  port: 9094
+
 #eureka:
 #  client:
 #    service-url:
@@ -10,9 +10,11 @@
 #    hostname: eureka-0
 #
 #
-#spring:
-#  application:
-#    name:  ORDER-SERVICE
+spring:
+  profiles:
+    active: dev
+  application:
+    name:  ORDER-SERVICE
 #  data:
 #    mongodb:
 #      url:  mongodb/mongodb-community-server
